@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/hZTFOMMr)
 # Tugas 2: Membangun Ulang Halaman Landing dari Figma
 
 Selamat datang pada pekan kedua program mentoring ini. Pada tahap ini, Anda akan ditantang untuk mengubah desain visual dari Figma menjadi sebuah halaman web yang fungsional dan responsif.
