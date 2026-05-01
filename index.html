@@ -2,13 +2,273 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Challenge - 2</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
   </head>
   <body>
-    <!-- code here -->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="#hero" class="navbar_logo">Tech.</a>
+          <!-- Toggle Mobile -->
+          <button
+            class="navbar_toggle"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="navbar_menu">
+            <div class="navbar_mobile-title">
+              <a href="#hero" class="navbar_logo">Tech.</a>
+              <button class="navbar_close" aria-label="Close menu">X</button>
+            </div>
+            <ul class="navbar_list">
+              <li><a href="#hero" class="navbar_link">About</a></li>
+              <li><a href="#service" class="navbar_link">Service</a></li>
+              <li><a href="#portofolio" class="navbar_link">Our Work</a></li>
+              <li><a href="#team" class="navbar_link">Team</a></li>
+            </ul>
+            <!-- Mobile Button CTA -->
+
+            <button
+              class="navbar_mobile-cta"
+              type="button"
+              aria-label="Go to contact section"
+            >
+              Contact Us
+            </button>
+          </div>
+
+          <!-- Desktop CTA -->
+          <button
+            class="navbar_cta"
+            type="button"
+            aria-label="Start conversation"
+          >
+            Contact Us
+          </button>
+        </nav>
+      </div>
+    </header>
+    <section class="hero" id="hero">
+      <div class="hero_wrapper">
+        <!-- LEFT -->
+        <div class="hero_content">
+          <h1 class="hero_title">Build with the <span>Future</span>.</h1>
+
+          <p class="hero_desc">
+            From building sleek websites and mobile apps to integrating AI
+            solutions, we help brands turn ideas into powerful digital
+            experiences that connect, engage, and scale.
+          </p>
+
+          <button class="hero_cta" type="button">Let’s Talk</button>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="hero_image">
+          <img src="./assets/images/hand.png" alt="Phone Mockup" />
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="container about_wrapper">
+        <h2 class="about_title">Who We Are</h2>
+
+        <p class="about_desc">
+          We're a group of tech students trained in
+          <span>building real-world digital products.</span>
+          From coding to design, we
+          <span>craft modern solutions for modern problems.</span>
+        </p>
+      </div>
+    </section>
+    <section class="services" id="service">
+      <div class="container">
+        <div class="services_header">
+          <h2 class="services_title">What We Do</h2>
+          <p class="services_desc">
+            We offer simple tech solutions to help your ideas grow.
+          </p>
+        </div>
+
+        <div class="services_list">
+          <!-- Card 1 -->
+          <div class="service_card">
+            <img
+              src="./assets/images/website.png"
+              alt="Website Icon"
+              class="service_icon"
+            />
+            <h3>Web Development</h3>
+            <p>Modern websites using HTML, CSS, JavaScript, and frameworks.</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="service_card">
+            <img
+              class="service_icon"
+              src="./assets/images/mobile.png"
+              alt="Mobile Icon"
+            />
+            <h3>App Development</h3>
+            <p>Mobile and desktop apps tailored for your needs</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="service_card">
+            <img
+              class="service_icon"
+              src="./assets/images/AI.png"
+              alt="AI Icon"
+            />
+            <h3>AI Integration</h3>
+            <p>Smart solutions using AI-powered tools and automation.</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="service_card">
+            <img
+              src="./assets/images/paint.png"
+              alt="Ui/UX Design Icon"
+              class="service_icon"
+            />
+            <h3>UI/UX Design</h3>
+            <p>Clean and functional designs for better user experience.</p>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="service_card">
+            <img
+              src="./assets/images/landing-page.png"
+              alt="Landing Page Icon"
+              class="service_icon"
+            />
+            <h3>Landing Page Design</h3>
+            <p>High-converting landing pages for your product or business.</p>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="service_card">
+            <img
+              src="./assets/images/cms.png"
+              alt="CSM Icon"
+              class="service_icon"
+            />
+            <h3>CMS Integration</h3>
+            <p>Easy-to-manage websites with WordPress or Webflow.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <!-- Header -->
+        <div class="portfolio_header">
+          <h2 class="portfolio_title">Our Work</h2>
+          <p class="portfolio_desc">
+            See what we’ve built with passion and purpose
+          </p>
+        </div>
+
+        <!-- Portofolio List -->
+        <div class="portfolio_list">
+          <div class="portfolio_item">
+            <img src="./assets/images/porto-1.png" alt="Portfolio 1" />
+            <p class="portfolio_label">Portfolio 1</p>
+          </div>
+
+          <div class="portfolio_item">
+            <img src="./assets/images/porto-2.png" alt="Portfolio 2" />
+            <p class="portfolio_label">Portfolio 2</p>
+          </div>
+
+          <div class="portfolio_item">
+            <img src="./assets/images/porto-3.png" alt="Portfolio 3" />
+            <p class="portfolio_label">Portfolio 3</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team" id="team">
+      <div class="container">
+        <div class="team_header">
+          <h2 class="team_title">Meet the Team</h2>
+          <p class="team_desc">A group of future-ready tech makers.</p>
+        </div>
+
+        <div class="team_list">
+          <!-- Member 1 -->
+          <div class="team_card">
+            <img src="./assets/images/ellipse-1.png" alt="Jasper Kim" />
+            <h3>Jasper Kim</h3>
+            <p>Project Manager</p>
+          </div>
+
+          <div class="team_card">
+            <img src="./assets/images/ellipse-2.png" alt="Alex Jonathan" />
+            <h3>Alex Jonathan</h3>
+            <p>Full-stack Developer</p>
+          </div>
+
+          <div class="team_card">
+            <img src="./assets/images/ellipse-3.png" alt="Mario Lopez" />
+            <h3>Mario Lopez</h3>
+            <p>UI/UX Designer</p>
+          </div>
+
+          <div class="team_card">
+            <img src="./assets/images/ellipse-4.png" alt="Jasper Kim" />
+            <h3>Jasper Kim</h3>
+            <p>Data Scientist</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact_header">
+          <h2 class="contact_title">Let’s Collaborate</h2>
+          <p class="contact_desc">Need a tech team? We're ready to help</p>
+        </div>
+
+        <form class="contact_form">
+          <!-- Name -->
+          <div class="form_group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" />
+          </div>
+
+          <div class="form_group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" />
+          </div>
+
+          <div class="form_group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              rows="5"
+              placeholder="Enter your message"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="contact_button">Send</button>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <p class="footer_text">
+        © 2025 Web Programming Hack. All rights reserved.
+      </p>
+    </footer>
   </body>
 </html>
